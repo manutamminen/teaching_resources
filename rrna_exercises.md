@@ -9,7 +9,7 @@ First the sequence reads need to be merged and filtered for high-quality sequenc
 Start by creating a new directory under your home folder for the exercise. Copy all the gzipped files from /wrk/bio_workshop/ to this folder. Then continue using the UPARSE workflow:
 
 ```bash
-/wrk/bio_workshop/usearch -fastq_mergepairs *_R1_*.fastq -relabel @ -fastqout merged.fq
+/wrk/bio_workshop/usearch -threads 3 -fastq_mergepairs *_R1_*.fastq -relabel @ -fastqout merged.fq
 
 /wrk/bio_workshop/usearch -fastq_filter merged.fq -fastq_maxee 1.0 -relabel Filt -fastaout filtered.fa
 
