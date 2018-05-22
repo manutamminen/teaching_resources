@@ -27,6 +27,7 @@ The 16S rRNA sequences can be identified by comparing them to databases of known
 
 ```bash
 module load qiime
+
 source activate qiime-1.9.1
 
 assign_taxonomy.py -i otus.fa -r /wrk/bio_workshop/SILVA123_QIIME_release/rep_set/rep_set_16S_only/99/99_otus_16S.fasta -t /wrk/bio_workshop/SILVA123_QIIME_release/taxonomy/16S_only/99/consensus_taxonomy_all_levels.txt -o silva_bac_taxonomy
