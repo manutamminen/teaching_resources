@@ -6,6 +6,8 @@ A common task in bacterial ecology is PCR amplification and next-gen sequencing 
 
 First the sequence reads need to be merged and filtered for high-quality sequences. Subsequently identical sequences are collapsed. Finally the sequences are clustered into OTUs - Operational Taxonomic Units - which is bacterial concept used instead of trying to adapt the concept of species to bacteria. We will follow the [UPARSE workflow](https://www.drive5.com/usearch/manual/ex_min2.html).
 
+Start by creating a new directory under your home folder for the exercise. Copy all the gzipped files from /wrk/bio_workshop/ to this folder. Then continue using the UPARSE workflow:
+
 ```bash
 /wrk/bio_workshop/usearch -fastq_mergepairs *_R1_*.fastq -relabel @ -fastqout merged.fq
 
