@@ -17,10 +17,10 @@ First the sequence reads need to be merged and filtered for high-quality sequenc
 ```
 
 Exercises:
-How many reads are in the raw files?
-How many unique sequences are in the data?
-How many copies of XXX are in the data?
-How many OTUs are in the data?
+1. How many reads are in the raw files?
+2. How many unique sequences are in the data?
+3. How many times is (are) the most occurring sequence(s) observed?
+4. How many OTUs are in the data?
 
 
 The 16S rRNA sequences can be identified by comparing them to databases of known 16S rRNA sequences. This can be done for instance by using the assign_taxonomy.py script provided by [Qiime](http://qiime.org).
@@ -35,7 +35,7 @@ source deactivate
 ```
 
 Exercises:
-Which are the three most common phyla, classes and genera in the data set?
+1. Which are the three most common phyla, classes and genera in the data set?
 
 Hint: use two successive awk commands with different delimiters, and pipe to | sort | uniq -c | sort -rn to count the most abundant ones.
 
@@ -61,7 +61,7 @@ FastTree -nt otus_align.fa > otus_align.tre
 ```
 
 Exercise:
-How does the tree file look like?
-Visualise the resulting tree on [iToL](http://itol.embl.de).
-How could you present abundance data around the phylogenetic tree?
+1. How does the tree file look like?
+2. Visualise the resulting tree on [iToL](http://itol.embl.de).
+3. How could you present abundance data around the phylogenetic tree?
 
